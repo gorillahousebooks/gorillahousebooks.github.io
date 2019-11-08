@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE shtml>
 <html lang="en">
 <head>
     <title>Gorilla House Books - Dog Walker, Dog Walker II, Agents of Paradox</title>
@@ -83,9 +83,9 @@
 </div>
 <a name="about"></a>
 <div class="about row">
-    <div class="col-lg-7 col-md-12">
-        <p style="text-align:justify;"><strong>GORILLA HOUSE</strong> is an independent book publisher located in Chicago, Illinois and operated more or less exclusively by <a href="#jack-mcguigan">Jack McGuigan</a>. We publish both novels (<a href="#dog-walker">Dog Walker</a>) and comic books (<a href="#agents-of-paradox">Agents of Paradox</a>).</p><p>There’s more to come! Subscribe to our <a href="https://gorillahouse.substack.com/" target="_blank" rel="noopener">newsletter</a> for news, reviews and upcoming projects. While we thank you for your interest, Gorilla House does not currently accept any manuscript submissions.</p>
-        <p><a href="https://gorillahouse.substack.com/archive?utm_source=menu-dropdown" style="text-decoration:none;">> <strong><em>Newsletter Archives</em></strong></a></p>
+    <div class="col-lg-7 col-md-12" style="text-align:justify;">
+        <p><strong style="letter-spacing:1px;">GORILLA HOUSE</strong> is an independent book publisher located in Chicago, Illinois and operated more or less exclusively by <a href="#jack-mcguigan">Jack McGuigan</a>. We publish both novels and comic books, as seen below.</p><p>There’s more to come! Subscribe to our <a href="https://gorillahouse.substack.com/" target="_blank" rel="noopener">Newsletter</a> for news, reviews and upcoming projects. While we thank you for your interest, Gorilla House does not currently accept any manuscript submissions.</p>
+        <p><a href="https://gorillahouse.substack.com/archive?utm_source=menu-dropdown" style="text-decoration:none;color: #15a853;"> <strong><em>> Newsletter Archives</em></strong></a></p>
     </div>
     <div class="col-lg-5 col-md-12">
         <iframe width="100%" height="220" class="embed-responsive-item" src="https://gorillahouse.substack.com/embed" frameborder="0" scrolling="no"></iframe>
@@ -347,10 +347,10 @@
         <!--Jack McG-->
         <div class="col-md-4 col-sm-12 text-right border-left">
 			<div class="row jack-gallery">
-				<div class="col-3"><a href="img/Jack01.jpg" data-lightbox="jack"><img src="img/Jack01-thumb.jpg" class="img-thumbnail" /></a></div>
-				<div class="col-3"><a href="img/Jack02.jpg" data-lightbox="jack"><img src="img/Jack02-thumb.jpg" class="img-thumbnail" /></a></div>
-				<div class="col-3"><a href="img/Jack03.jpg" data-lightbox="jack"><img src="img/Jack03-thumb.jpg" class="img-thumbnail" /></a></div>
-				<div class="col-3"><a href="img/Jack04.jpg" data-lightbox="jack"><img src="img/Jack04-thumb.jpg" class="img-thumbnail" /></a></div>
+				<div class="col-3"><img src="img/Jack01-thumb.jpg" class="img-thumbnail" /></div>
+				<div class="col-3"><img src="img/Jack02-thumb.jpg" class="img-thumbnail" /></div>
+				<div class="col-3"><img src="img/Jack03-thumb.jpg" class="img-thumbnail" /></div>
+				<div class="col-3"><img src="img/Jack04-thumb.jpg" class="img-thumbnail" /></div>
 			</div>
         <p style="text-align:justify"><strong>JACK McGUIGAN</strong> is the writer of the <a href="http://amzn.to/1RHB3ni"><em>Dog Walker</em></a> novels and <a title="Agents of Paradox" href="https://amzn.to/2GQRNwf"><em>Agents of Paradox</em></a>, a comic book. He made movies in his youth under the pseudonym “John McGuigan” which can be viewed on <a href="https://www.youtube.com/user/fireassault">YouTube</a>. He lives in Chicago with his family. You can contact him in a variety of ways, but Twitter and email are the ones he checks.</p>
         <p class="icons">
@@ -387,14 +387,40 @@
     </div>
 </footer>
 	
+<a href="javascript:void();" id="back-to-top" title="Back to top"><i class="fas fa-chevron-up"></i></a>
+ 
 <script type="text/javascript">
+$(document).ready(function() {
 	$('.carousel').carousel('pause');
 	$('a[href^="#"]').click(function () {
-    $('html, body').animate({
-        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-    }, 500);
+        $('html, body').animate({
+            scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+        }, 500);
+        return false;
+	});
 
-    return false;
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+            backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+    }
 });
 </script>
 	
