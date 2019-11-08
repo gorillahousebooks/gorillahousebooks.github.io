@@ -1,4 +1,4 @@
-﻿<!DOCTYPE shtml>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Gorilla House Books - Dog Walker, Dog Walker II, Agents of Paradox</title>
@@ -38,7 +38,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
 <div class="container">	
   <!-- Brand/logo -->
   <a class="navbar-brand" href="index.html"><img src="img/GorillaTopBar2.svg" alt="Gorilla House" /></a>
@@ -84,7 +84,7 @@
 <a name="about"></a>
 <div class="about row">
     <div class="col-lg-7 col-md-12" style="text-align:justify;">
-        <p><strong style="letter-spacing:1px;">GORILLA HOUSE</strong> is an independent book publisher located in Chicago, Illinois and operated more or less exclusively by <a href="#jack-mcguigan">Jack McGuigan</a>. We publish both novels and comic books, as seen below.</p><p>There’s more to come! Subscribe to our <a href="https://gorillahouse.substack.com/" target="_blank" rel="noopener">Newsletter</a> for news, reviews and upcoming projects. While we thank you for your interest, Gorilla House does not currently accept any manuscript submissions.</p>
+        <p><strong style="letter-spacing:1px;">GORILLA HOUSE</strong> is an independent book publisher located in Chicago, Illinois and operated more or less exclusively by <a href="#jack-mcguigan">Jack McGuigan</a>. We publish both novels and comic books.</p><p>There’s more to come! Subscribe to our <a href="https://gorillahouse.substack.com/" target="_blank" rel="noopener">Newsletter</a> for news, reviews and upcoming projects. While we thank you for your interest, Gorilla House does not currently accept any manuscript submissions.</p>
         <p><a href="https://gorillahouse.substack.com/archive?utm_source=menu-dropdown" style="text-decoration:none;color: #15a853;"> <strong><em>> Newsletter Archives</em></strong></a></p>
     </div>
     <div class="col-lg-5 col-md-12">
@@ -96,6 +96,11 @@
    <div class="book agents-of-paradox row d-block clearfix">
  		<div class="col-12 col-md-5 float-left">
 		  <img src="img/AgentsofParadox.jpg" class="img-fluid" alt="Agents of Paradox - Front">
+          <div class="aop-thumbs text-center">
+              <a href="img/aop-pg1.jpg" data-lightbox="aop"><img src="img/aop-pg1-thumb.jpg" class="img-thumbnail" /></a>
+              <a href="img/aop-pg2.jpg" data-lightbox="aop"><img src="img/aop-pg2-thumb.jpg" class="img-thumbnail" /></a>
+              <a href="img/aop-pg3.jpg" data-lightbox="aop"><img src="img/aop-pg3-thumb.jpg" class="img-thumbnail" /></a>
+          </div>
         </div>
         <div class="col-12 col-md-7 float-right">
 			<h2 class="display-4">Agents of Paradox</h2>
@@ -236,13 +241,13 @@
     <div id="jack-mcguigan" class="bg-dark text-white">
 	    <div class="row">
             <div class="col-md-5">
-                <div id="demo" class="carousel slide" data-ride="carousel">
+                <div id="jack" class="carousel slide  carousel-fade" data-ride="carousel">
                     <!-- Indicators -->
                     <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#jack" data-slide-to="0" class="active"></li>
+                        <li data-target="#jack" data-slide-to="1"></li>
+                        <li data-target="#jack" data-slide-to="2"></li>
+                        <li data-target="#jack" data-slide-to="3"></li>
                     </ul>
 
                     <!-- The slideshow -->
@@ -390,7 +395,11 @@
 <a href="javascript:void();" id="back-to-top" title="Back to top"><i class="fas fa-chevron-up"></i></a>
  
 <script type="text/javascript">
-$(document).ready(function() {
+$(document).ready(function () {
+    lightbox.option({
+        'fitImagesInViewport': true
+    });
+
 	$('.carousel').carousel('pause');
 	$('a[href^="#"]').click(function () {
         $('html, body').animate({
