@@ -92,6 +92,7 @@
     </div>
 </div>
 <br />
+
 <a  class="anchor" name="dog-walker"></a>
    <div class="book dog-walker row d-block clearfix">
  		<div class="col-12 col-md-5 float-left">
@@ -180,6 +181,7 @@
 			</div>
     	</div>  
 	</div>
+	
 <a class="anchor" name="agents-of-paradox"></a>
    <div class="book agents-of-paradox row d-block clearfix">
  		<div class="col-12 col-md-5 float-left">
@@ -235,11 +237,12 @@
     	</div>  
 	</div>
 
+	
 <a class="anchor" name="jack-mcguigan"></a>
     <div id="jack-mcguigan" class="bg-dark text-white">
 	    <div class="row">
             <div class="col-md-5">
-                <div id="jack" class="carousel slide  carousel-fade" data-ride="carousel">
+                <div id="jack" class="carousel carousel-fade" data-ride="carousel"  data-interval="false">
                     <!-- Indicators -->
                     <ul class="carousel-indicators">
                         <li data-target="#jack" data-slide-to="0" class="active"></li>
@@ -345,7 +348,7 @@
         </div>
         <!--Newsletter Signup-->
         <div class="col-md-4 col-sm-12 text-center">
-        <iframe width="100%" height="220" src="https://gorillahouse.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+        <iframe width="100%" height="220"  style="display: none;" src="https://gorillahouse.substack.com/embed" frameborder="0" scrolling="no" onload="this.style.display='block';"></iframe>
         </div>
         <!--Jack McG-->
         <div class="col-md-4 col-sm-12 text-right border-left">
@@ -399,36 +402,38 @@ $(document).ready(function () {
     });
 
 	$('.carousel').carousel('pause');
-	$('a[href^="#"]').click(function () {
+});
+	
+$('a[href^="#"]').click(function () {
         $('html, body').animate({
             scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
         }, 500);
         return false;
-	});
-
-    if ($('#back-to-top').length) {
-        var scrollTrigger = 100, // px
-            backToTop = function () {
-                var scrollTop = $(window).scrollTop();
-                if (scrollTop > scrollTrigger) {
-                    $('#back-to-top').addClass('show');
-                } else {
-                    $('#back-to-top').removeClass('show');
-                }
-            };
-            backToTop();
-        $(window).on('scroll', function () {
-            backToTop();
-        });
-        $('#back-to-top').on('click', function (e) {
-            e.preventDefault();
-            $('html,body').animate({
-                scrollTop: 0
-            }, 500);
-            return false;
-        });
-    }
 });
+
+if ($('#back-to-top').length) {
+	var scrollTrigger = 100, // px
+		backToTop = function () {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > scrollTrigger) {
+				$('#back-to-top').addClass('show');
+			} else {
+				$('#back-to-top').removeClass('show');
+			}
+		};
+		backToTop();
+	$(window).on('scroll', function () {
+		backToTop();
+	});
+	$('#back-to-top').on('click', function (e) {
+		e.preventDefault();
+		$('html,body').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+	});
+}
+	
 </script>
 	
 </body>
