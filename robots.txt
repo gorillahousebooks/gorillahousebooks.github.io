@@ -1,2 +1,5 @@
 User-agent: * 
 Disallow: 
+
+# Sitemap files
+Sitemap: https://gorillahousebooks.com/sitemap.xml
