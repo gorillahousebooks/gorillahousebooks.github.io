@@ -345,7 +345,7 @@
         <!--Newsletter Signup-->
         <div class="col-md-4 col-sm-12 text-center">
         <iframe width="100%" height="220"  style="display: none;" src="https://gorillahouse.substack.com/embed" frameborder="0" scrolling="no" onload="this.style.display='block';"></iframe>
-       <div class="footer-copyright text-center py-3">&copy; 2019 Gorilla House</div>
+       <div class="footer-copyright text-center py-3">&copy; <span class="year"></span> Gorilla House. All rights reserved.</div>
         </div>
         <!--Jack McG-->
         <div class="col-md-4 col-sm-12 text-right border-left">
@@ -399,6 +399,8 @@ $(document).ready(function () {
     });
 
 	$('.carousel').carousel('pause');
+
+	$('.footer-copyright .year').text( (new Date).getFullYear() );
 });
 	
 $('a[href^="#"]').click(function () {
