@@ -5,7 +5,7 @@ html,body{font-family: 'Roboto', sans-serif;}
 .display-1,.display-2,.display-3,.display-4,.display-5{font-family: 'Special Elite', cursive;}
 .display-4{font-size:3rem;}
 .display-5{font-size: 2.3rem;}
-h5{font-weight:bold;font-size:1em;margin-top:1em;}
+h3{font-weight:bold;font-size:1em;margin-top:1em;}
 
 a{color:black;}
 a:hover{color:darkgray;transition:0.2s;}
@@ -47,6 +47,7 @@ a.anchor {
 /*--about--*/
 .about{margin:2em 0 1em;}
 .about a {text-decoration: underline;}
+h1.site-title {font-size: medium;font-weight: bold;letter-spacing: 1px;display: inline;}
 
 /*--books--*/
 .row.book{margin:2em 0;border-top:1px dashed #343a40;padding:3em 0 2em;}
