@@ -19,11 +19,94 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Roboto+Slab:wght@200;300&display=swap" rel="stylesheet">
 </head>
 <style type="text/css">
-	body{font-family: 'Roboto Slab', serif;font-weight:300;background-color:#292929;}
+	body{font-family: 'Roboto Slab', serif;font-weight:300;}
 
 	h1,h2,h3,h4,h5,h6 {font-family: 'Oswald', sans-serif;font-weight:600;}
 	.navbar .nav-item .nav-link {font-family: 'Oswald', sans-serif;font-weight:400;font-size:1.4em;color:#99cda6;}
 	a {color:#99cda6;}
+	
+	.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+	}
+
+	.hovereffect .overlay {
+	  position: absolute;
+	  overflow: hidden;
+	  width: 80%;
+	  height: 80%;
+	  left: 10%;
+	  top: 10%;
+	  border-bottom: 1px solid #FFF;
+	  border-top: 1px solid #FFF;
+	  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	  transition: opacity 0.35s, transform 0.35s;
+	  -webkit-transform: scale(0,1);
+	  -ms-transform: scale(0,1);
+	  transform: scale(0,1);
+	}
+
+	.hovereffect:hover .overlay {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	  -webkit-transform: scale(1);
+	  -ms-transform: scale(1);
+	  transform: scale(1);
+	}
+
+	.hovereffect img {
+	  display: block;
+	  position: relative;
+	  -webkit-transition: all 0.35s;
+	  transition: all 0.35s;
+	}
+
+	.hovereffect:hover img {
+	  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+	  filter: brightness(0.6);
+	  -webkit-filter: brightness(0.6);
+	}
+
+	.hovereffect h2 {
+	  text-transform: uppercase;
+	  text-align: center;
+	  position: relative;
+	  font-size: 17px;
+	  background-color: transparent;
+	  color: #FFF;
+	  padding: 1em 0;
+	  opacity: 0;
+	  filter: alpha(opacity=0);
+	  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	  transition: opacity 0.35s, transform 0.35s;
+	  -webkit-transform: translate3d(0,-100%,0);
+	  transform: translate3d(0,-100%,0);
+	}
+
+	.hovereffect a, .hovereffect p {
+	  color: #FFF;
+	  padding: 1em 0;
+	  opacity: 0;
+	  filter: alpha(opacity=0);
+	  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	  transition: opacity 0.35s, transform 0.35s;
+	  -webkit-transform: translate3d(0,100%,0);
+	  transform: translate3d(0,100%,0);
+	}
+
+	.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	  -webkit-transform: translate3d(0,0,0);
+	  transform: translate3d(0,0,0);
+	}
+	a.btn-outline-white {color:white;border:1px solid white;}
+	a.btn-outline-white:hover {color:white!important;background-color:white;}
 	@media (max-width: 426px) {
 		.navbar-brand img {max-height:auto !important;max-width:300px!important;}
 		.display-3 {font-size:3rem;}
@@ -58,13 +141,45 @@
   <!-- Portfolio -->
   <a name="portfolio"></a>
   <div class="container border-bottom py-4">
-    <div class="row pb-4" id="gallery" data-toggle="modal" data-target="#exampleModal">
-		  <div class="col-6 col-md-4 col-lg-3">
-			<img class="w-100" src="img/STATE_sales_screen01-269x269.jpg" alt="STATE Optical – Sales Introduction Video">
-		  </div>
-    </div>
+    <div class="row pb-4" id="gallery">
+		
+		<!-- State Optical Icon -->
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    		<div class="hovereffect">
+			<img class="img-responsive" src="img/STATE_sales_screen01-269x269.jpg" alt="STATE Optical – Sales Introduction Video">
+				<div class="overlay">
+					<h2>STATE Optical – Sales Introduction Video</h2>
+					<p>
+						<a href="#stateoptical" class="btn border p-2 bg-secondary" data-toggle="modal">PLAY</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- State Optical Modal HTML -->
+		<div id="stateoptical" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">STATE Optical – Sales Introduction Video</h5>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/210719990?autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+					  <br />
+					  <p>Video produced as a sales tool for Chicago-based eyewear manufactrurer, State Optical Co.</p>
+					  <p>Produced by: FOUR Productions</p>
+					  <p>Edited by: Mike Pokryfke<br />
+						Graphics by: Mike Pokryfke<br />
+						Audio by: Mike Pokryfke<br />
+						Timelapse photography by: Mike Pokryfke</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    </div>			  
   </div>
-
+	
   <!-- About -->
   <a name="about"></a>
   <div class="container border-bottom py-4">
