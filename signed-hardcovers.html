@@ -9,15 +9,15 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ghousebooks" />
     <meta name="twitter:creator" content="@ghousebooks" />
-    <meta name="twitter:title" content="Gorilla House Books - Dog Walker, Agents of Paradox by Jack McGuigan" />
-    <meta name="twitter:description" content="Gorilla House is an independent publisher located in Chicago, Illinois, owned and operated by Jack McGuigan. We publish both novels and comic books. Dog Walker II: Shadow Pack is available now!" />
+    <meta name="twitter:title" content="Signed Hardcovers - Gorilla House Books" />
+    <meta name="twitter:description" content="Gorilla House is an independent publisher located in Chicago, Illinois, owned and operated by Jack McGuigan. We publish both novels and comic books. Dog Walker III: Wedding Siege is available now!" />
     <meta name="twitter:image" content="https://gorillahousebooks.com/images/TwitterCard.jpg" />
     <meta name="twitter:image:alt" content="Gorilla House logo and book covers" />
     
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Gorilla House Books - Dog Walker, Agents of Paradox by Jack McGuigan" />
-    <meta property="og:description" content="Gorilla House is an independent publisher located in Chicago, Illinois, owned and operated by Jack McGuigan. We publish both novels and comic books. Dog Walker II: Shadow Pack is available now!" />
+    <meta property="og:title" content="Signed Hardcovers - Gorilla House Books" />
+    <meta property="og:description" content="Gorilla House is an independent publisher located in Chicago, Illinois, owned and operated by Jack McGuigan. We publish both novels and comic books. Dog Walker III: Wedding Siege is available now!" />
     <meta property="og:url" content="https://gorillahousebooks.com/" />
     <meta property="og:site_name" content="Gorilla House" />
     <meta property="og:image" content="https://gorillahousebooks.com/images/TwitterCard.jpg" />
@@ -111,52 +111,7 @@
 			<p class="font-weight-bold text-danger pl-2 pb-4">plus $3.99 shipping</p>
 	   </div>
 	   <div class="col-lg-7 col-md-12 float-right pt-4">
-		<div id="smart-button-container">
-			<div style="text-align: center;">
-			  <div id="paypal-button-container"></div>
-			</div>
-		  </div>
-		<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-		<script>
-		  function initPayPalButton() {
-			paypal.Buttons({
-			  style: {
-				shape: 'pill',
-				color: 'gold',
-				layout: 'horizontal',
-				label: 'paypal',
-				
-			  },
-	  
-			  createOrder: function(data, actions) {
-				return actions.order.create({
-				  purchase_units: [{"description":"Dog Walker - Signed Hardcover","amount":{"currency_code":"USD","value":23.99,"breakdown":{"item_total":{"currency_code":"USD","value":20},"shipping":{"currency_code":"USD","value":3.99},"tax_total":{"currency_code":"USD","value":0}}}}]
-				});
-			  },
-	  
-			  onApprove: function(data, actions) {
-				return actions.order.capture().then(function(orderData) {
-				  
-				  // Full available details
-				  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-	  
-				  // Show a success message within this page, e.g.
-				  const element = document.getElementById('paypal-button-container');
-				  element.innerHTML = '';
-				  element.innerHTML = '<h3>Thank you for your payment!</h3>';
-	  
-				  // Or go to another URL:  actions.redirect('thank_you.html');
-				  
-				});
-			  },
-	  
-			  onError: function(err) {
-				console.log(err);
-			  }
-			}).render('#paypal-button-container');
-		  }
-		  initPayPalButton();
-		</script>
+		
     	</div>  
 	</div>
 <a class="anchor" name="dog-walker-ii"></a>
@@ -174,52 +129,7 @@
                 
 	   </div>
 	   <div class="col-lg-7 col-md-12 float-right pt-4">
-		<div id="smart-button-container">
-			<div style="text-align: center;">
-			  <div id="paypal-button-container2"></div>
-			  
-			</div>
-		  </div>
-		<script>
-			function initPayPalButton2() {
-				paypal.Buttons({
-				style: {
-					shape: 'pill',
-					color: 'gold',
-					layout: 'horizontal',
-					label: 'paypal',
-					
-				},
 		
-				createOrder: function(data, actions) {
-					return actions.order.create({
-					purchase_units: [{"description":"Dog Walker II: Shadow Pack - Signed Hardcover","amount":{"currency_code":"USD","value":28.99,"breakdown":{"item_total":{"currency_code":"USD","value":25},"shipping":{"currency_code":"USD","value":3.99},"tax_total":{"currency_code":"USD","value":0}}}}]
-					});
-				},
-		
-				onApprove: function(data, actions) {
-					return actions.order.capture().then(function(orderData) {
-					
-					// Full available details
-					console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-		
-					// Show a success message within this page, e.g.
-					const element = document.getElementById('paypal-button-container2');
-					element.innerHTML = '';
-					element.innerHTML = '<h3>Thank you for your payment!</h3>';
-		
-					// Or go to another URL:  actions.redirect('thank_you.html');
-					
-					});
-				},
-		
-				onError: function(err) {
-					console.log(err);
-				}
-				}).render('#paypal-button-container2');
-			}
-			initPayPalButton2();
-		</script>
     	</div>  
 	</div>
 
