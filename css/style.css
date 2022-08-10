@@ -17,7 +17,9 @@ a.anchor {
     visibility: hidden;
 }
 
-.icons{font-size:2em;}
+.icons {
+    font-size: 2em;
+}
 /*--Nav Bar--*/
 .bg-dark.navbar-dark{background-color:black !important;padding: 0;}
 
@@ -44,6 +46,10 @@ a.anchor {
     height: 100%;
 }
 
+#ticker {background-color:#333333;background: url('../images/broken_noise.png') repeat fixed;}
+#ticker a {color:white;}
+#ticker a:hover{text-decoration: none;}
+
 /*--about--*/
 .about{margin:2em 0 1em;}
 .about a {text-decoration: underline;}
@@ -55,22 +61,25 @@ h1.site-title {font-size: medium;font-weight: bold;letter-spacing: 1px;display: 
 .authorbio{background: #f2f2f2;text-align:justify;padding:1em;font-size:75%;border:1px solid #dee2e6;}
 .row.book table.table th, .row.book table.table td{vertical-align: middle;}
 .row.book table .btn-dark {white-space:nowrap;font-size:0.9em;background-color:#1a1a1a;}
-.aop-thumbs img{width:auto;max-height:75px;margin:1em 0.5em;}
-.agents-of-paradox a:hover{color:#8a71bd;}
-.agents-of-paradox table .btn-dark:hover{background-color:#8a71bd;border-color:#8a71bd;color:white;}
+
 .dog-walker a:hover{color:#cf363c;}
 .dog-walker table .btn-dark:hover{background-color:#cf363c;border-color:#cf363c;color:white;}
+
 .dog-walker-ii a:hover{color: #0066cc;}
 .dog-walker-ii table .btn-dark:hover{background-color:#0066cc;border-color:#0066cc;color:white;}
 
+.dog-walker-iii a:hover, .agents-of-paradox a:hover{color:#8a71bd;}
+.dog-walker-iii table .btn-dark:hover, .agents-of-paradox table .btn-dark:hover{background-color:#8a71bd;border-color:#8a71bd;color:white;}
+.aop-thumbs img{width:auto;max-height:75px;margin:1em 0.5em;}
+
 /*--jack mcguigan--*/
-#jack-mcguigan.bg-dark{background-color:#333333 !important;padding:2em;margin-bottom:3em;text-align:justify;background: url('../images/broken_noise.png') repeat fixed;
-}
+#jack-mcguigan.bg-dark{padding:2em;margin-bottom:3em;text-align:justify;background-color:#333333;background: url('../images/broken_noise.png') repeat fixed;}
 #jack-mcguigan .carousel-inner{margin-bottom:1em;}
 #jack-mcguigan .carousel-inner .carousel-item {overflow: hidden; max-width: 100%; max-height: 100%;}
 #jack-mcguigan .carousel-inner .carousel-item img {width: 100%;min-height: 100%;max-height: none;}
 #jack-mcguigan a{color:white;text-decoration:underline;}
-#jack-mcguigan .icons a:hover{color:lightgray;transition:0.2s;}
+#jack-mcguigan a:hover{color:#25bd65;transition:0.2s;}
+#jack-mcguigan .icons{font-size:1.2em;line-height: 2em;font-family: 'Merriweather', serif;font-weight: 100;letter-spacing:1px;}
 
 /*--footer--*/
 footer{background-color:#f5f5f5;}
