@@ -46,7 +46,7 @@ a.anchor {
     height: 100%;
 }
 
-#ticker {background-color:#333333;background: url('../images/broken_noise.png') repeat fixed;}
+#ticker {background-color:#333333;background: url('../images/broken_noise.webp') repeat fixed;}
 #ticker a {color:white;}
 #ticker a:hover{text-decoration: none;}
 
@@ -73,7 +73,7 @@ h1.site-title {font-size: medium;font-weight: bold;letter-spacing: 1px;display: 
 .aop-thumbs img{width:auto;max-height:75px;margin:1em 0.5em;}
 
 /*--jack mcguigan--*/
-#jack-mcguigan.bg-dark{padding:2em;margin-bottom:3em;text-align:justify;background-color:#333333;background: url('../images/broken_noise.png') repeat fixed;}
+#jack-mcguigan.bg-dark{padding:2em;margin-bottom:3em;text-align:justify;background-color:#333333;background: url('../images/broken_noise.webp') repeat fixed;}
 #jack-mcguigan .carousel-inner{margin-bottom:1em;}
 #jack-mcguigan .carousel-inner .carousel-item {overflow: hidden; max-width: 100%; max-height: 100%;}
 #jack-mcguigan .carousel-inner .carousel-item img {width: 100%;min-height: 100%;max-height: none;}
