@@ -151,8 +151,8 @@
 			<!-- lg -->
 			<img class="d-none d-lg-block img-fluid w-100" alt="Dog Walker - Cover" src="images/DogWalker-lg.webp">
 			<div class="aop-thumbs text-center">
-			  <a href="images/DogWalker.webp" data-lightbox="dw"><img src="images/dogwalker-thumb.jpg" alt="Dog Walker - 2021" class="img-thumbnail" /></a>
-			  <a href="images/DogWalker-old.webp" data-lightbox="dw"><img src="images/dogwalker-old-thumb.jpg" alt="Dog Walker - 2016" class="img-thumbnail" /></a>
+			  <a href="images/DogWalker.webp" data-lightbox="dw"><img src="images/dogwalker-thumb.webp" alt="Dog Walker - 2021" class="img-thumbnail" /></a>
+			  <a href="images/DogWalker-old.webp" data-lightbox="dw"><img src="images/dogwalker-old-thumb.webp" alt="Dog Walker - 2016" class="img-thumbnail" /></a>
 		  </div>
         </div>
         <div class="col-12 col-md-7 float-right">
@@ -212,8 +212,8 @@
 			<!-- lg -->
 			<img class="d-none d-lg-block img-fluid w-100" alt="Dog Walker II - Cover" src="images/DogWalkerII-lg.webp">
 			<div class="aop-thumbs text-center">
-			  <a href="images/DogWalkerII.webp" data-lightbox="dw2"><img src="images/DogWalkerII-thumb.jpg" alt="Dog Walker II: Shadow Pack- 2021" class="img-thumbnail" /></a>
-			  <a href="images/DogWalkerII-old.webp" data-lightbox="dw2"><img src="images/dogwalkerii-old-thumb.jpg" alt="Dog Walker II: Shadow Pack- 2016" class="img-thumbnail" /></a>
+			  <a href="images/DogWalkerII.webp" data-lightbox="dw2"><img src="images/DogWalkerII-thumb.webp" alt="Dog Walker II: Shadow Pack- 2021" class="img-thumbnail" /></a>
+			  <a href="images/DogWalkerII-old.webp" data-lightbox="dw2"><img src="images/dogwalkerii-old-thumb.webp" alt="Dog Walker II: Shadow Pack- 2016" class="img-thumbnail" /></a>
 		  </div>
 			<div class="text-center pb-2">
 				<a href="https://youtu.be/CEdUloEdWe8" class="text-danger font-weight-bold" target="_blank"><i class="fab fa-youtube-square pr-2"></i>TRAILER</a><br />
@@ -410,7 +410,7 @@
 				function play(){var audio = document.getElementById("audio");audio.play();}
 			</script>
 			<audio id="audio" src="media/x-menyell.mp3"></audio>
-			<img id="logo-vo" src="images/LogoFooter.png" style="cursor: pointer; padding: 0;" value="PLAY" onclick="play()" alt="Gorilla House logo" class="col-6" /><br /><br />
+			<img id="logo-vo" src="images/LogoFooter.webp" style="cursor: pointer; padding: 0;" value="PLAY" onclick="play()" alt="Gorilla House logo" class="col-6" /><br /><br />
 			<p><strong>GORILLA HOUSE</strong> is an independent publisher located in Chicago, Illinois. We publish both novels and comic books. Retail and press inquiries may be directed to:</p>
 			<strong>Gorilla House</strong><br />
 			<a href="https://gorillahousebooks.com/">GorillaHouseBooks.com</a><br />
@@ -443,50 +443,6 @@
 	
 <a href="javascript:void();" id="back-to-top" title="Back to top"><i class="fas fa-chevron-up"></i></a>
  
-<script type="text/javascript">
-$(document).ready(function () {
-    lightbox.option({
-        'fitImagesInViewport': true
-    });
-
-	$('.carousel').carousel('pause');
-
-	$('.footer-copyright .year').text( (new Date).getFullYear() );
-});
-	
-$('a[href^="#"]').click(function () {
-        $('html, body').animate({scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top}, 500);
-        return false;
-});
-
-if ($('#back-to-top').length) {
-	var scrollTrigger = 100, // px
-		backToTop = function () {
-			var scrollTop = $(window).scrollTop();
-			if (scrollTop > scrollTrigger) {
-				$('#back-to-top').addClass('show');
-			} else {
-				$('#back-to-top').removeClass('show');
-			}
-		};
-		backToTop();
-	$(window).on('scroll', function () {
-		backToTop();
-	});
-	$('#back-to-top').on('click', function (e) {
-		e.preventDefault();
-		$('html,body').animate({
-			scrollTop: 0
-		}, 500);
-		return false;
-	});
-}
-	
-</script>
-
-<script type="application/ld+json">
-    {"@context":"http://schema.org","@graph":[{"@type":"Organization","description":"Gorilla House is an independent publisher located in Chicago, Illinois, owned and operated by Jack McGuigan. We publish both novels and comic books.","image":{"@type":"ImageObject","url":"https://gorillahousebooks.com/images/TwitterCard2022.jpg"},"mainEntityOfPage":"https://gorillahousebooks.com/","name":"Novels and Graphic Novels","url":"https://gorillahousebooks.com/"},{"@id":"https://gorillahousebooks.com#about-us","@type":"Organization","address":{"@type":"PostalAddress","addressCountry":"US","addressLocality":"Park Ridge","addressRegion":"Illinois","postalCode":"60068","streetAddress":"PO Box 893"},"description":"Gorilla House is an independent publisher located in Chicago, Illinois, owned and operated by Jack McGuigan. We publish both novels and comic books.","name":"Gorilla House","sameAs":["http://twitter.com/ghousebooks","https://www.youtube.com/channel/UCRYsS4r-KQpL9VVM1JEkhew","https://gorillahouse.substack.com/","https://www.amazon.com/Jack-McGuigan/e/B01CGWGW92/","https://www.goodreads.com/author/show/5687848.Jack_McGuigan"],"url":"https://gorillahousebooks.com"},{"@id":"#creator","@type":"Organization"}]}
-</script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -495,6 +451,50 @@ crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/lightbox.js"></script>
 
+<script type="text/javascript">
+	$(document).ready(function () {
+		lightbox.option({
+			'fitImagesInViewport': true
+		});
+	
+		$('.carousel').carousel('pause');
+	
+		$('.footer-copyright .year').text( (new Date).getFullYear() );
+	});
+		
+	$('a[href^="#"]').click(function () {
+			$('html, body').animate({scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top}, 500);
+			return false;
+	});
+	
+	if ($('#back-to-top').length) {
+		var scrollTrigger = 100, // px
+			backToTop = function () {
+				var scrollTop = $(window).scrollTop();
+				if (scrollTop > scrollTrigger) {
+					$('#back-to-top').addClass('show');
+				} else {
+					$('#back-to-top').removeClass('show');
+				}
+			};
+			backToTop();
+		$(window).on('scroll', function () {
+			backToTop();
+		});
+		$('#back-to-top').on('click', function (e) {
+			e.preventDefault();
+			$('html,body').animate({
+				scrollTop: 0
+			}, 500);
+			return false;
+		});
+	}
+		
+	</script>
+	
+	<script type="application/ld+json">
+		{"@context":"http://schema.org","@graph":[{"@type":"Organization","description":"Gorilla House is an independent publisher located in Chicago, Illinois, owned and operated by Jack McGuigan. We publish both novels and comic books.","image":{"@type":"ImageObject","url":"https://gorillahousebooks.com/images/TwitterCard2022.jpg"},"mainEntityOfPage":"https://gorillahousebooks.com/","name":"Novels and Graphic Novels","url":"https://gorillahousebooks.com/"},{"@id":"https://gorillahousebooks.com#about-us","@type":"Organization","address":{"@type":"PostalAddress","addressCountry":"US","addressLocality":"Park Ridge","addressRegion":"Illinois","postalCode":"60068","streetAddress":"PO Box 893"},"description":"Gorilla House is an independent publisher located in Chicago, Illinois, owned and operated by Jack McGuigan. We publish both novels and comic books.","name":"Gorilla House","sameAs":["http://twitter.com/ghousebooks","https://www.youtube.com/channel/UCRYsS4r-KQpL9VVM1JEkhew","https://gorillahouse.substack.com/","https://www.amazon.com/Jack-McGuigan/e/B01CGWGW92/","https://www.goodreads.com/author/show/5687848.Jack_McGuigan"],"url":"https://gorillahousebooks.com"},{"@id":"#creator","@type":"Organization"}]}
+	</script>
 
 </body>
 </html>
