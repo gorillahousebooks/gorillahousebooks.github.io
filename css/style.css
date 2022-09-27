@@ -68,10 +68,10 @@ h1.site-title {font-size: medium;font-weight: bold;letter-spacing: 1px;display: 
 .dog-walker-ii a:hover,.dog-walker-ii .price{color: #0066cc;}
 .dog-walker-ii table .btn-dark:hover{background-color:#0066cc;border-color:#0066cc;color:white;}
 
-.dog-walker-iii a:hover {color:#9933cc;}
+.dog-walker-iii a:hover,.dog-walker-iii .price {color:#9933cc;}
 .dog-walker-iii table .btn-dark:hover {background-color:#9933cc;border-color:#9933cc;color:white;}
 
-.agents-of-paradox a:hover{color:#8a71bd;}
+.agents-of-paradox a:hover, .agents-of-paradox .price {color:#8a71bd;}
 .agents-of-paradox table .btn-dark:hover{background-color:#8a71bd;border-color:#8a71bd;color:white;}
 .aop-thumbs img{width:auto;max-height:75px;margin:1em 0.5em;}
 

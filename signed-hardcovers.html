@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css?ver=06152021">
+    <link rel="stylesheet" href="css/style.css?ver=09272022">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
@@ -93,7 +93,7 @@
 
 <div class="container" style="margin-top:5em;">
 <h1 class="text-center display-3 pb-4">Signed Hardcovers</h1>
-<p class="text-small">Note: Continental US orders only. Please allow a few weeks for delivery. I have to order an author copy from Amazon, receive it, sign it, draw a little picture in there and then send it out to you, and a lot of that depends on people who aren't me. I'll send a USPS tracking code when I ship it.</p>
+<p class="text-small">Note: Continental US orders only. Please allow a few weeks for delivery. I have to order an author copy from Amazon, receive it, sign it, draw a little picture in there and then send it out to you, and a lot of that depends on people who aren't me. If you want a specific message in there, <a href="javascript:location='mailto:\u006a\u0061\u0063\u006b\u0040\u0067\u006f\u0072\u0069\u006c\u006c\u0061\u0068\u006f\u0075\u0073\u0065\u0062\u006f\u006f\u006b\u0073\u002e\u0063\u006f\u006d';void 0""><u>let me know</u></a>. I'll send you a USPS tracking code when I ship it.</p>
 <a  class="anchor" name="dog-walker"></a>
    <div class="book dog-walker row d-block clearfix">
  		<div class="col-12 col-md-5 float-left">
@@ -160,75 +160,211 @@
 		</script>
     	</div>  
 	</div>
-<a class="anchor" name="dog-walker-ii"></a>
-   <div class="book dog-walker-ii row d-block clearfix">
- 		<div class="col-12 col-md-5 float-left">
-			<!-- sm -->
-			<img class="d-md-none img-fluid w-100" alt="Dog Walker II - Cover" src="images/DogWalkerII-sm.webp" >
-			<!-- md -->
-			<img class="d-none d-md-block d-lg-none img-fluid w-100" alt="Dog Walker II - Cover" src="images/DogWalkerII-md.webp">
-			<!-- lg -->
-			<img class="d-none d-lg-block img-fluid w-100" alt="Dog Walker II - Cover" src="images/DogWalkerII-lg.webp">
-        </div>
-        <div class="col-12 col-md-7 float-right border-bottom">
-                <h2 class="display-4">Dog Walker II<br /><span class="display-5" style="font-style: italic;
-    font-weight:100">Shadow Pack</span></h2>
-                <h3>"THE GIRL WITH SPIDER HAIR"</h3>
-				<p>Since we last saw him, Ben has been pulling double duty – dog walker by day, demon slayer by night. Toby assists in the latter, growing more violent with each kill. Dogs can be domesticated, but an inugami’s murderous instincts are not easily suppressed.</p>
-				<h3 class="display-4 price my-0 pt-2 pb-0 pl-2">$25</h3>
-				<p class="font-weight-bold price pl-2 pb-4">plus $3.99 shipping</p>
-                
+	<a class="anchor" name="dog-walker-ii"></a>
+	<div class="book dog-walker-ii row d-block clearfix">
+		  <div class="col-12 col-md-5 float-left">
+			 <!-- sm -->
+			 <img class="d-md-none img-fluid w-100" alt="Dog Walker II - Cover" src="images/DogWalkerII-sm.webp" >
+			 <!-- md -->
+			 <img class="d-none d-md-block d-lg-none img-fluid w-100" alt="Dog Walker II - Cover" src="images/DogWalkerII-md.webp">
+			 <!-- lg -->
+			 <img class="d-none d-lg-block img-fluid w-100" alt="Dog Walker II - Cover" src="images/DogWalkerII-lg.webp">
+		 </div>
+		 <div class="col-12 col-md-7 float-right border-bottom">
+				 <h2 class="display-4">Dog Walker II<br /><span class="display-5" style="font-style: italic;
+	 font-weight:100">Shadow Pack</span></h2>
+				 <h3>"THE GIRL WITH SPIDER HAIR"</h3>
+				 <p>Since we last saw him, Ben has been pulling double duty – dog walker by day, demon slayer by night. Toby assists in the latter, growing more violent with each kill. Dogs can be domesticated, but an inugami’s murderous instincts are not easily suppressed.</p>
+				 <h3 class="display-4 price my-0 pt-2 pb-0 pl-2">$25</h3>
+				 <p class="font-weight-bold price pl-2 pb-4">plus $3.99 shipping</p>
+				 
+		</div>
+		<div class="col-lg-7 col-md-12 float-right pt-4">
+			 <div id="smart-button-container">
+				 <div style="text-align: center;">
+				 <div id="paypal-button-container2"></div>
+				 </div>
+			 </div>
+			 <script>
+			 function initPayPalButton2() {
+				 paypal.Buttons({
+				 style: {
+					 shape: 'rect',
+					 color: 'gold',
+					 layout: 'horizontal',
+					 label: 'paypal',
+					 
+				 },
+		 
+				 createOrder: function(data, actions) {
+					 return actions.order.create({
+					 purchase_units: [{"description":"Dog Walker II: Shadow Pack Hardcover (signed)","amount":{"currency_code":"USD","value":28.99,"breakdown":{"item_total":{"currency_code":"USD","value":25},"shipping":{"currency_code":"USD","value":3.99},"tax_total":{"currency_code":"USD","value":0}}}}]
+					 });
+				 },
+		 
+				 onApprove: function(data, actions) {
+					 return actions.order.capture().then(function(orderData) {
+					 
+					 // Full available details
+					 console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+		 
+					 // Show a success message within this page, e.g.
+					 const element = document.getElementById('paypal-button-container2');
+					 element.innerHTML = '';
+					 element.innerHTML = '<h3>Thank you for your payment!</h3>';
+		 
+					 // Or go to another URL:  actions.redirect('thank_you.html');
+					 
+					 });
+				 },
+		 
+				 onError: function(err) {
+					 console.log(err);
+				 }
+				 }).render('#paypal-button-container2');
+			 }
+			 initPayPalButton2();
+			 </script>
+		 </div>  
+	 </div>
+
+	 <a class="anchor" name="dog-walker-iii"></a>
+	  <div class="book dog-walker-iii row d-block clearfix">
+			<div class="col-12 col-md-5 float-left">
+			   <!-- sm -->
+			   <img class="d-md-none img-fluid w-100" alt="Dog Walker III - Cover" src="images/DogWalkerIII-sm.webp" >
+			   <!-- md -->
+			   <img class="d-none d-md-block d-lg-none img-fluid w-100" alt="Dog Walker III - Cover" src="images/DogWalkerIII-md.webp">
+			   <!-- lg -->
+			   <img class="d-none d-lg-block img-fluid w-100" alt="Dog Walker III - Cover" src="images/DogWalkerIII-lg.webp">
+		   </div>
+		   <div class="col-12 col-md-7 float-right border-bottom">
+				   <h2 class="display-4">Dog Walker III<br /><span class="display-5" style="font-style: italic;
+	   font-weight:100">Wedding Siege</span></h2>
+				   <h3>"BULLETS & BLOWHOLES"</h3>
+				   <p>Dog walker Ben Carter is shocked to discover that his mom's fiancé Alvar is an "encantado" – a shapeshifting dolphin that seduces human women and preys on their flesh. He races to Minnesota to stop their wedding, leaving demon dog Toby back in Chicago.</p>
+				   <h3 class="display-4 price my-0 pt-2 pb-0 pl-2">$25</h3>
+				   <p class="font-weight-bold price pl-2 pb-4">plus $3.99 shipping</p>
+				   
+		  </div>
+		  <div class="col-lg-7 col-md-12 float-right pt-4">
+			   <div id="smart-button-container">
+				   <div style="text-align: center;">
+				   <div id="paypal-button-container3"></div>
+				   </div>
+			   </div>
+			   <script>
+			   function initPayPalButton3() {
+				   paypal.Buttons({
+				   style: {
+					   shape: 'rect',
+					   color: 'gold',
+					   layout: 'horizontal',
+					   label: 'paypal',
+					   
+				   },
+		   
+				   createOrder: function(data, actions) {
+					   return actions.order.create({
+					   purchase_units: [{"description":"Dog Walker III: Wedding Siege Hardcover (signed)","amount":{"currency_code":"USD","value":28.99,"breakdown":{"item_total":{"currency_code":"USD","value":25},"shipping":{"currency_code":"USD","value":3.99},"tax_total":{"currency_code":"USD","value":0}}}}]
+					   });
+				   },
+		   
+				   onApprove: function(data, actions) {
+					   return actions.order.capture().then(function(orderData) {
+					   
+					   // Full available details
+					   console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+		   
+					   // Show a success message within this page, e.g.
+					   const element = document.getElementById('paypal-button-container2');
+					   element.innerHTML = '';
+					   element.innerHTML = '<h3>Thank you for your payment!</h3>';
+		   
+					   // Or go to another URL:  actions.redirect('thank_you.html');
+					   
+					   });
+				   },
+		   
+				   onError: function(err) {
+					   console.log(err);
+				   }
+				   }).render('#paypal-button-container3');
+			   }
+			   initPayPalButton3();
+			   </script>
+		   </div>  
 	   </div>
-	   <div class="col-lg-7 col-md-12 float-right pt-4">
-			<div id="smart-button-container">
-				<div style="text-align: center;">
-				<div id="paypal-button-container2"></div>
-				</div>
-			</div>
-			<script>
-			function initPayPalButton2() {
-				paypal.Buttons({
-				style: {
-					shape: 'rect',
-					color: 'gold',
-					layout: 'horizontal',
-					label: 'paypal',
-					
-				},
-		
-				createOrder: function(data, actions) {
-					return actions.order.create({
-					purchase_units: [{"description":"Dog Walker II: Shadow Pack Hardcover (signed)","amount":{"currency_code":"USD","value":28.99,"breakdown":{"item_total":{"currency_code":"USD","value":25},"shipping":{"currency_code":"USD","value":3.99},"tax_total":{"currency_code":"USD","value":0}}}}]
-					});
-				},
-		
-				onApprove: function(data, actions) {
-					return actions.order.capture().then(function(orderData) {
-					
-					// Full available details
-					console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-		
-					// Show a success message within this page, e.g.
-					const element = document.getElementById('paypal-button-container2');
-					element.innerHTML = '';
-					element.innerHTML = '<h3>Thank you for your payment!</h3>';
-		
-					// Or go to another URL:  actions.redirect('thank_you.html');
-					
-					});
-				},
-		
-				onError: function(err) {
-					console.log(err);
-				}
-				}).render('#paypal-button-container2');
-			}
-			initPayPalButton2();
-			</script>
-    	</div>  
-	</div>
 
-
+	   
+ <a class="anchor" name="agents-of-paradox"></a>
+ <div class="book agents-of-paradox row d-block clearfix">
+	   <div class="col-12 col-md-5 float-left">
+		  <!-- sm -->
+		  <img class="d-md-none img-fluid w-100" alt="Agents of Paradox - Cover" src="images/AgentsofParadox-sm.webp" >
+		  <!-- md -->
+		  <img class="d-none d-md-block d-lg-none img-fluid w-100" alt="Agents of Paradox - Cover" src="images/AgentsofParadox-md.webp">
+		  <!-- lg -->
+		  <img class="d-none d-lg-block img-fluid w-100" alt="Agents of Paradox - Cover" src="images/AgentsofParadox-lg.webp">
+	  </div>
+	  <div class="col-12 col-md-7 float-right border-bottom">
+			  <h2 class="display-4">Agents of Paradox</h2>
+			  <p><em><strong>Note:</strong> This one's a paperback! The hardcover would be like fifty bucks. Nobody wants that. It will be signed only by the writer, not the artist or colorist. They live far away.</em></p> 
+			  <h3>"TIME BREAKS!"</h3>
+			  <p>Samuel Dillon and Katie Baker are Agents of Paradox! They travel through time and space, closing wormholes to preserve the timestream.</p>
+			  <h3 class="display-4 price my-0 pt-2 pb-0 pl-2">$20</h3>
+			  <p class="font-weight-bold price pl-2 pb-4">plus $3.99 shipping</p>
+			  
+	 </div>
+	 <div class="col-lg-7 col-md-12 float-right pt-4">
+		  <div id="smart-button-container">
+			  <div style="text-align: center;">
+			  <div id="paypal-button-container4"></div>
+			  </div>
+		  </div>
+		  <script>
+		  function initPayPalButton4() {
+			  paypal.Buttons({
+			  style: {
+				  shape: 'rect',
+				  color: 'gold',
+				  layout: 'horizontal',
+				  label: 'paypal',
+				  
+			  },
+	  
+			  createOrder: function(data, actions) {
+				  return actions.order.create({
+				  purchase_units: [{"description":"Agents of Paradox paperback (signed)","amount":{"currency_code":"USD","value":23.99,"breakdown":{"item_total":{"currency_code":"USD","value":20},"shipping":{"currency_code":"USD","value":3.99},"tax_total":{"currency_code":"USD","value":0}}}}]
+				  });
+			  },
+	  
+			  onApprove: function(data, actions) {
+				  return actions.order.capture().then(function(orderData) {
+				  
+				  // Full available details
+				  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+	  
+				  // Show a success message within this page, e.g.
+				  const element = document.getElementById('paypal-button-container4');
+				  element.innerHTML = '';
+				  element.innerHTML = '<h3>Thank you for your payment!</h3>';
+	  
+				  // Or go to another URL:  actions.redirect('thank_you.html');
+				  
+				  });
+			  },
+	  
+			  onError: function(err) {
+				  console.log(err);
+			  }
+			  }).render('#paypal-button-container4');
+		  }
+		  initPayPalButton4();
+		  </script>
+	  </div>  
+  </div>
+	
 </div>
 <footer class="container-fluid border-top">
     <div class="container">
