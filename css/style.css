@@ -30,7 +30,7 @@ a.anchor {
 }
 .navbar-dark .navbar-nav .nav-link{color:#fff;font-size:0.9em;}
 .dropdown-item {font-size:0.9em;}
-.navbar-dark .navbar-nav .nav-item .dropdown-item:focus{background-color:#25bd65;color:#fff;}
+.navbar-dark .navbar-nav .nav-item .dropdown-item:active{background-color:#25bd65;color:#fff;}
 
 #headercarousel .carousel-caption {
     position: relative;
