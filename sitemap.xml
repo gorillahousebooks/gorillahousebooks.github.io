@@ -9,15 +9,54 @@
 
 <url>
   <loc>https://www.gorillahousebooks.com/</loc>
-  <lastmod>2022-09-27T15:22:58+00:00</lastmod>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.gorillahousebooks.com/index.html</loc>
-  <lastmod>2022-09-27T15:22:58+00:00</lastmod>
+  <loc>https://www.gorillahousebooks.com/nanoman.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://www.gorillahousebooks.com/nanoland.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gorillahousebooks.com/dog-walker.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gorillahousebooks.com/jack-mcguigan.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gorillahousebooks.com/frank-nano-saga.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gorillahousebooks.com/dog-walker-series.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gorillahousebooks.com/dog-walker-ii-shadow-pack.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gorillahousebooks.com/dog-walker-iii-wedding-siege.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gorillahousebooks.com/agents-of-paradox.html</loc>
+  <lastmod>2026-05-09T03:26:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 
 </urlset>
