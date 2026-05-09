@@ -7,7 +7,7 @@ class DogWalker extends HTMLElement {
             <div class="row">
                 <div class="col-6 col-md-4 col-lg-3 text-center pb-4">
                     <a href="dog-walker.html">
-                        <img src="images/dogwalker-lg.webp" alt="Dog Walker by Jack McGuigan" class="img-fluid" /><br />
+                        <img src="images/DogWalker-lg.webp" alt="Dog Walker by Jack McGuigan" class="img-fluid" /><br />
                     </a>
                     <a href="dog-walker.html">
                         <strong>Dog Walker</strong>
@@ -19,7 +19,7 @@ class DogWalker extends HTMLElement {
                 </div>     
                 <div class="col-6 col-md-4 col-lg-3 text-center pb-4">
                     <a href="dog-walker-ii-shadow-pack.html">
-                        <img src="images/dogwalkerii-lg.webp" alt="Dog Walker II: Shadow Pack by Jack McGuigan" class="img-fluid" /><br />
+                        <img src="images/DogWalkerII-lg.webp" alt="Dog Walker II: Shadow Pack by Jack McGuigan" class="img-fluid" /><br />
                     </a>
                     <a href="dog-walker-ii-shadow-pack.html">
                         <strong><span class="text-nowrap">Dog Walker II:</span> <span class="text-nowrap">Shadow Pack</span></strong>
@@ -31,7 +31,7 @@ class DogWalker extends HTMLElement {
                 </div>   
                 <div class="col-6 col-md-4 col-lg-3 text-center pb-4">
                     <a href="dog-walker-iii-wedding-siege.html">
-                        <img src="images/dogwalkeriii-lg.webp" alt="Dog Walker III: Wedding Siege by Jack McGuigan" class="img-fluid" /><br />
+                        <img src="images/DogWalkerIII-lg.webp" alt="Dog Walker III: Wedding Siege by Jack McGuigan" class="img-fluid" /><br />
                     </a>
                     <a href="dog-walker-iii-wedding-siege.html">
                         <strong><span class="text-nowrap">Dog Walker III:</span> <span class="text-nowrap">Wedding Siege</span></strong>
