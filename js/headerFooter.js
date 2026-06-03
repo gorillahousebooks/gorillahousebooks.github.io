@@ -86,9 +86,9 @@ class MultiFooter extends HTMLElement {
                     <a name="footeremail" href="mailto:jack@gorillahousebooks.com"><i class="fas fa-envelope"></i></a>&nbsp;
                     <a name="footernewsletter" href="https://gorilla-house.beehiiv.com/?modal=signup" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>&nbsp;
                     <a name="footeramazon" href="https://amzn.to/1SRspAc" target="_blank" rel="noopener"><i class="fab fa-amazon"></i></a>&nbsp;
-                    <a name="footerbluesky" href="https://bsky.app/profile/gorillahousebooks.com" target="_blank" rel="noopener"><i class="fa-brands fa-square-bluesky"></i></a>&nbsp;
-                    <a name="footerinstagram" href="https://instagram.com/jackmcgbooks" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>&nbsp;
                     <a name="footerletterboxd" href="https://letterboxd.com/dogwalker/" target="_blank" rel="noopener"><i class="fa-brands fa-square-letterboxd"></i></a>&nbsp;
+                    <a name="footerinstagram" href="https://instagram.com/jackmcgbooks" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>&nbsp;
+                    <a name="footerbluesky" href="https://bsky.app/profile/gorillahousebooks.com" target="_blank" rel="noopener"><i class="fa-brands fa-square-bluesky"></i></a>&nbsp;
                     <a name="footergoodreads" href="https://goodreads.com/jackmcgrak" target="_blank" rel="noopener"><i class="fa-brands fa-goodreads"></i></a>
                     </p>
                     </div>
