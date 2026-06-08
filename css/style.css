@@ -1,15 +1,15 @@
 ﻿@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oregano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nothing+You+Could+Do&display=swap');
 
 /* CSS Document */
 
 html,body{font-family: 'Roboto', sans-serif;}
-.display-1,.display-4,.display-7{font-family: "Black Han Sans", serif;}
-.display-2,.display-3,.display-5,.display-6,#mc_embed_signup h2 .ml-logo {font-family:"Oregano",serif;}
-.display-4{font-size:3rem;letter-spacing:1px;}
+.display-1,.display-4,.display-7{font-family: "League Spartan", sans-serif;font-weight:900; font-optical-sizing: auto;line-height:normal;}
+.display-2,.display-3,.display-5,.display-6,#mc_embed_signup h2 .ml-logo {font-family: "Nothing You Could Do", cursive;}
+.display-4{font-size:3.5rem;letter-spacing:1px;margin-bottom:-0.5rem;}
 .display-5{font-size: 3rem;}
 .display-6{font-size:1.4rem;letter-spacing:1px;}
-.display-7 {font-size:2.5rem;letter-spacing:1px;}
+.display-7 {font-size:1.6rem;text-transform: uppercase;}
 h3{font-weight:bold;font-size:1em;margin-top:1em;}
 
 a{color:black;}
@@ -60,7 +60,6 @@ a.anchor {
 }
 
 /*--about--*/
-.about{}
 .about a {text-decoration: underline;}
 h1.site-title {font-size: medium;font-weight: bold;letter-spacing: 1px;display: inline;}
 
@@ -75,7 +74,7 @@ h1.site-title {font-size: medium;font-weight: bold;letter-spacing: 1px;display: 
 header.book-page {margin-top:46px;color:white;}
 header.book-page .container{padding:5rem 2rem;margin-bottom:1rem;}
 header.book-page h1 {filter: drop-shadow(3px 3px 0px #000000);letter-spacing:2px;text-transform:uppercase;}
-header.book-page h1 .display-1 {font-size:4.6rem;}
+header.book-page h1 .display-1 {font-size:5rem;line-height:1.2em;}
 header.book-page h2 {filter: drop-shadow(2px 2px 0px #000000);}
 
 header.nanoland-header {background-image:url('../images/nanoland-header.webp');background-size:cover;background-position: top left;}
@@ -124,7 +123,7 @@ header.book-page .agents-of-paradox {background-color: rgba(138, 113, 189, 0.8);
 #jack-mcguigan .carousel-inner{margin-bottom:1em;}
 #jack-mcguigan .carousel-inner .carousel-item {overflow: hidden; max-width: 100%; max-height: 100%;}
 #jack-mcguigan .carousel-inner .carousel-item img {width: 100%;min-height: 100%;max-height: none;}
-#jack-mcguigan a{color:white;text-decoration:underline;font-weight: 500;}
+#jack-mcguigan a{color:white;text-decoration:underline;}
 #jack-mcguigan a:hover{color:#25bd65;transition:0.2s;}
 #jack-mcguigan a.btn {color:black; margin:4px auto;}
 #jack-mcguigan a.btn:hover {color:white;background-color:#25bd65;border:1px solid #25bd65;}
@@ -172,7 +171,7 @@ footer .row.jack-gallery div.col-3 {text-align:center; margin: 0 0 1.5em;padding
 	
     /* headers */
     header.book-page .container{padding:3rem 2rem;}
-    header.book-page h1 {font-size:2rem;filter: drop-shadow(2px 2px 0px #000000);}
+    header.book-page h1 {font-size:2rem;filter: drop-shadow(2px 2px 0px #000000);margin-bottom:0;}
     header.book-page h1 span.display-1{font-size:2.5rem;}
     header.book-page h2 {font-size:1.5rem;filter: drop-shadow(2px 2px 0px #000000);}
 	/* book */

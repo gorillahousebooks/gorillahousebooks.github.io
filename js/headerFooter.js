@@ -66,7 +66,7 @@ class MultiFooter extends HTMLElement {
                     </div>
                     <div class="col-12 col-lg-4 px-2 text-center">
                         <div id="mc_embed_shell" class="p-4 border rounded shadow-sm text-center bg-white text-center">
-                            <span class="display-7" style="font-size:1.5rem;">The Primate Post</span>
+                            <span class="display-6" style="font-size:1.5rem;font-weight:700">The Primate Post</span>
                             <p class="text-center text-secondary">News and Updates</p>
                             <div id="beehiiv-form-container" class="w-100 text-center">
                             </div>
