@@ -44,6 +44,9 @@ a.anchor {
     left: 0;
     top: 0;
 }
+.carousel-control-next, .carousel-control-prev {
+    width:10%;
+}
 
 /*--Video--*/
 .video-container {
