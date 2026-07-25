@@ -38,6 +38,9 @@ class MultiNav extends HTMLElement {
                     <a class="nav-link" href="jack-mcguigan.html">Jack McGuigan</a>
                     </li>
                     <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link" href="https://gorilla-house.beehiiv.com/?modal=signup" target="_blank" rel="noreferrer">Newsletter</a>
                     </li>
                 </ul>
