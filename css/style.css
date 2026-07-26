@@ -80,6 +80,7 @@ header.book-page .container{padding:5rem 2rem;margin-bottom:1rem;}
 header.book-page h1 {filter: drop-shadow(3px 3px 0px #000000);letter-spacing:2px;text-transform:uppercase;}
 header.book-page h1 .display-1 {font-size:5rem;line-height:1.2em;}
 header.book-page h2 {filter: drop-shadow(2px 2px 0px #000000);}
+header.book-page img{width:66%}
 
 header.nanoland-header {background-image:url('../images/nanoland-header.webp');background-size:cover;background-position: top left;}
 header.dog-walker-header {background-image:url('../images/dog-walker-header.webp');background-size:cover;background-position: top left;}
@@ -101,6 +102,12 @@ header.book-page .nanoland {background-color: rgba(23,72,131, 0.8);}
 header.book-page .nanoman {background-color: rgba(156,27,1, 0.8);}
 .nanoman a:hover,.nanoman .price{color: #9c1b01;}
 .nanoman table .btn-dark:hover {background-color:#9c1b01 !important;border-color:#9c1b01;color:white;}
+
+/*--nanoworld--*/
+header.book-page .nanoworld {background-color: rgba(46, 84, 36, 0.8);}
+.nanoworld a:hover,.nanoworld .price{color: #2e5424;}
+.nanoworld table .btn-dark:hover {background-color:#2e5424 !important;border-color:#2e5424;color:white;}
+
 
 /*--dog walker--*/
 header.book-page .dog-walker {background-color: rgba(207, 54, 60, 0.8);}
