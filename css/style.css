@@ -93,42 +93,56 @@ header.agents-of-paradox-header {background-image:url('../images/aop-header.webp
 .authorbio a{color:#3d3d3d;}
 .row.book table.table th, .row.book table.table td{vertical-align: middle;}
 .row.book table .btn-dark {white-space:nowrap;font-size:0.9em;background-color:#1a1a1a;margin:4px 0;}
-.row.book table .btn-outline-dark {white-space:nowrap;font-size:0.9em;margin:4px 0;}
+.btn-outline-book {background-color:transparent;font-weight:700;margin:4px 4px;}
 
 /*--nanoland--*/
 header.book-page .nanoland {background-color: rgba(23,72,131, 0.8);}
 .nanoland a:hover, .nanoland .price {color:#175e9f;}
 .nanoland table .btn-dark:hover{background-color:#175e9f;border-color:#175e9f;color:white;}
+.nanoland .btn-outline-book {color:#175e9f;border-color:#175e9f;}
+.nanoland .btn-outline-book:hover {background-color:#175e9f;border-color:#175e9f;color:white;}
 
 /*--nanoman--*/
 header.book-page .nanoman {background-color: rgba(156,27,1, 0.8);}
 .nanoman a:hover,.nanoman .price{color: #9c1b01;}
 .nanoman table .btn-dark:hover {background-color:#9c1b01 !important;border-color:#9c1b01;color:white;}
+.nanoman .btn-outline-book {color:#9c1b01;border-color:#9c1b01;}
+.nanoman .btn-outline-book:hover {background-color:#9c1b01;border-color:#9c1b01;color:white;}
 
 /*--nanoworld--*/
 header.book-page .nanoworld {background-color: rgba(46, 84, 36, 0.8);}
 .nanoworld a:hover,.nanoworld .price{color: #2e5424;}
 .nanoworld table .btn-dark:hover {background-color:#2e5424 !important;border-color:#2e5424;color:white;}
+.nanoworld .btn-outline-book {color:#2e5424;border-color:#2e5424;}
+.nanoworld .btn-outline-book:hover {background-color:#2e5424;border-color:#2e5424;color:white;}
 
 
 /*--dog walker--*/
 header.book-page .dog-walker {background-color: rgba(207, 54, 60, 0.8);}
 .dog-walker a:hover, .dog-walker .price {color:#cf363c;}
 .dog-walker table .btn-dark:hover{background-color:#cf363c;border-color:#cf363c;color:white;}
+.dog-walker .btn-outline-book {color:#cf363c;border-color:#cf363c;}
+.dog-walker .btn-outline-book:hover {background-color:#cf363c;border-color:#cf363c;color:white;}
 
 /*--dog walker ii--*/
 header.book-page .dog-walker-ii {background-color: rgba(0, 102, 204, 0.8);}
 .dog-walker-ii a:hover,.dog-walker-ii .price{color: #0066cc;}
 .dog-walker-ii table .btn-dark:hover {background-color:#0066cc !important;border-color:#0066cc;color:white;}
+.dog-walker-ii .btn-outline-book {color:#0066cc;border-color:#0066cc;}
+.dog-walker-ii .btn-outline-book:hover {background-color:#0066cc;border-color:#0066cc;color:white;}
 
 header.book-page .dog-walker-iii {background-color: rgba(153, 51, 204, 0.8);}
 .dog-walker-iii a:hover,.dog-walker-iii .price {color:#9933cc;}
 .dog-walker-iii table .btn-dark:hover {background-color:#9933cc;border-color:#9933cc;color:white;}
+.dog-walker-iii .btn-outline-book {color:#9933cc;border-color:#9933cc;}
+.dog-walker-iii .btn-outline-book:hover {background-color:#9933cc;border-color:#9933cc;color:white;}
 
 /*--agents of paradox--*/
 header.book-page .agents-of-paradox {background-color: rgba(138, 113, 189, 0.8);}
 .agents-of-paradox a:hover, .agents-of-paradox .price {color:#8a71bd;}
 .agents-of-paradox table .btn-dark:hover{background-color:rgb(138, 113, 189);border-color:#8a71bd;color:white;}
+.agents-of-paradox .btn-outline-book {color:#8a71bd;border-color:#8a71bd;}
+.agents-of-paradox .btn-outline-book:hover {background-color:#8a71bd;border-color:#8a71bd;color:white;}
 .aop-thumbs img{width:auto;max-height:75px;margin:1em 0.5em;}
 
 /*--jack mcguigan--*/
@@ -189,8 +203,8 @@ footer .row.jack-gallery div.col-3 {text-align:center; margin: 0 0 1.5em;padding
     header.book-page h2 {font-size:1.5rem;filter: drop-shadow(2px 2px 0px #000000);}
 	/* book */
     .row.book {margin:0.5em 0;padding:1em 0;}
-	.row.book table,.row.book table .btn-dark,.row.book table .btn-outline-dark {font-size:0.9em;margin:0.5em 0;}
-	.row.book table .btn-dark i,.row.book table .btn-outline-dark i {display:none;}
+	.row.book table,.row.book table .btn-dark {font-size:0.9em;margin:0.5em 0;}
+	.row.book table .btn-dark i {display:none;}
 
 	/* footer */
 	footer div div.border-right, footer div div.border-left{border:0 !important;}
