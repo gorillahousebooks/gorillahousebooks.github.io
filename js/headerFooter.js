@@ -61,7 +61,7 @@ class MultiFooter extends HTMLElement {
                 <div class="row">
                     <div class="ghinfo col-12 col-lg-4 text-left pr-2 pr-md-4">
                         <audio id="audio" src="media/x-menyell.mp3"></audio>
-                        <img id="logo-vo" src="images/LogoFooter.webp" style="cursor: pointer; padding: 0;" value="PLAY" onclick="play()" alt="Gorilla House logo" class="col-6" /><br /><br />
+                        <img id="logo-vo" src="images/LogoFooter.webp" style="cursor: pointer; padding: 0;" value="PLAY" onclick="play()" alt="Gorilla House logo" class="col-6" loading="lazy" /><br /><br />
                         <p><strong>GORILLA HOUSE</strong> is an independent publisher located in Chicago, Illinois. We publish both novels and comic books. Retail and press inquiries may be directed to:</p>
                         <strong>Gorilla House</strong><br />
                         <a href="https://gorillahousebooks.com/">GorillaHouseBooks.com</a><br />
@@ -79,20 +79,20 @@ class MultiFooter extends HTMLElement {
 
                     <div class="col-12 col-lg-4 pl-2 pl-md-4">
                         <div class="row jack-gallery">
-                            <div class="col-3"><img src="images/Jack04.jpg" class="img-thumbnail img-fluid" alt="Jack, 2016" /></div>
-                            <div class="col-3"><img src="images/Jack01.jpg" class="img-thumbnail img-fluid" alt="Jack and Murray, 2019" /></div>
-                            <div class="col-3"><img src="images/Jack02.jpg" class="img-thumbnail img-fluid" alt="Jack and Remy, 2016" /></div>
-                            <div class="col-3"><img src="images/Jack03.jpg" class="img-thumbnail img-fluid" alt="Comic Jack, 2016" /></div>
+                            <div class="col-3"><img src="images/Jack04.webp" class="img-thumbnail img-fluid" alt="Jack, 2016" loading="lazy" /></div>
+                            <div class="col-3"><img src="images/Jack01.webp" class="img-thumbnail img-fluid" alt="Jack and Murray, 2019" loading="lazy" /></div>
+                            <div class="col-3"><img src="images/Jack02.webp" class="img-thumbnail img-fluid" alt="Jack and Remy, 2016" loading="lazy" /></div>
+                            <div class="col-3"><img src="images/Jack03.webp" class="img-thumbnail img-fluid" alt="Comic Jack, 2016" loading="lazy" /></div>
                         </div>
                     <p style="text-align:justify"><strong>JACK McGUIGAN</strong> is the author of the <em>Dog Walker</em> novels, the Frank Nano Saga (<em>Nanoland, Nanoman</em>), and <em>Agents of Paradox</em>, a comic book. In his youth, he made movies under the pseudonym "John McGuigan" that can be found on <a href="https://www.youtube.com/user/fireassault" rel="noopener">the internet</a>. He lives in Chicago with his family.</p>
                     <p class="icons text-left text-lg-right">
-                    <a name="footeremail" href="mailto:jack@gorillahousebooks.com"><i class="fas fa-envelope"></i></a>&nbsp;
-                    <a name="footernewsletter" href="https://gorilla-house.beehiiv.com/?modal=signup" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>&nbsp;
-                    <a name="footeramazon" href="https://amzn.to/1SRspAc" target="_blank" rel="noopener"><i class="fab fa-amazon"></i></a>&nbsp;
-                    <a name="footerletterboxd" href="https://letterboxd.com/dogwalker/" target="_blank" rel="noopener"><i class="fa-brands fa-square-letterboxd"></i></a>&nbsp;
-                    <a name="footerinstagram" href="https://instagram.com/jackmcgbooks" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>&nbsp;
-                    <a name="footerbluesky" href="https://bsky.app/profile/gorillahousebooks.com" target="_blank" rel="noopener"><i class="fa-brands fa-square-bluesky"></i></a>&nbsp;
-                    <a name="footergoodreads" href="https://goodreads.com/jackmcgrak" target="_blank" rel="noopener"><i class="fa-brands fa-goodreads"></i></a>
+                    <a name="footeremail" href="mailto:jack@gorillahousebooks.com" aria-label="Email"><i class="fas fa-envelope"></i></a>&nbsp;
+                    <a name="footernewsletter" href="https://gorilla-house.beehiiv.com/?modal=signup" target="_blank" rel="noopener" aria-label="Newsletter"><i class="fa-solid fa-newspaper"></i></a>&nbsp;
+                    <a name="footeramazon" href="https://amzn.to/1SRspAc" target="_blank" rel="noopener" aria-label="Amazon"><i class="fab fa-amazon"></i></a>&nbsp;
+                    <a name="footerletterboxd" href="https://letterboxd.com/dogwalker/" target="_blank" rel="noopener" aria-label="Letterboxd"><i class="fa-brands fa-square-letterboxd"></i></a>&nbsp;
+                    <a name="footerinstagram" href="https://instagram.com/jackmcgbooks" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>&nbsp;
+                    <a name="footerbluesky" href="https://bsky.app/profile/gorillahousebooks.com" target="_blank" rel="noopener" aria-label="Bluesky"><i class="fa-brands fa-square-bluesky"></i></a>&nbsp;
+                    <a name="footergoodreads" href="https://goodreads.com/jackmcgrak" target="_blank" rel="noopener" aria-label="Goodreads"><i class="fa-brands fa-goodreads"></i></a>
                     </p>
                     </div>
                 </div>
